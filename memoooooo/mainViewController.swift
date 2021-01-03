@@ -18,6 +18,7 @@ class mainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.set_toolbar()
         self.listTableView.delegate = self
         self.listTableView.dataSource = self
         self.listTableView.register(UINib(nibName: "listTableViewCell",
@@ -99,6 +100,30 @@ class mainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         }
     }
     
+    ///キーボードの完了ボタン設定
+    func set_toolbar(){
+        // ツールバー生成(サイズはsizeToFitメソッドで自動で調整される)
+        let toolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+        // サイズの自動調整(あえて手動で実装したい場合はCGRectに記述してsizeToFitは呼び出さないこと）
+        toolBar.sizeToFit()
+        // 左側のBarButtonItemはflexibleSpace ※これがないと右に寄らない
+        let spacer = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace,
+                                     target: self,
+                                     action: nil)
+        // Doneボタン
+        let commitButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done,
+                                           target: self,
+                                           action: #selector(commitButtonTapped))
+        // BarButtonItemの配置
+        toolBar.items = [spacer, commitButton]
+        // キーボードにツールバーを設定
+        self.inputTextField.inputAccessoryView = toolBar
+    }
+    
+    /// キーボード用doneボタンで入力完了
+    @objc func commitButtonTapped() {
+        self.view.endEditing(true)
+    }
     /*
     // MARK: - Navigation
 
