@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="mainViewController" customModule="memoooooo" customModuleProvider="target">
             <connections>
+                <outlet property="inputTextField" destination="OHX-da-dBr" id="fW7-h9-2Ub"/>
                 <outlet property="listTableView" destination="HeE-Nq-EWg" id="bD8-y6-fht"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -53,6 +54,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VI4-bD-AbX">
                                                     <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                     <state key="normal" title="add"/>
+                                                    <connections>
+                                                        <action selector="addButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="5IL-Mt-fxd"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>

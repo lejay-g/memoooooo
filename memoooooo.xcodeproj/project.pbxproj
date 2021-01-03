@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39677C1BE5A65118358B39B7 /* Pods_memoooooo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A228569442217B3698791D77 /* Pods_memoooooo.framework */; };
+		C10BAE9225A1D06300AE90C0 /* memoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10BAE9125A1D06300AE90C0 /* memoObject.swift */; };
 		C157456B25A1C710007C4139 /* listTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C157456925A1C710007C4139 /* listTableViewCell.swift */; };
 		C157456C25A1C710007C4139 /* listTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C157456A25A1C710007C4139 /* listTableViewCell.xib */; };
 		C1B2094E25A1A83500EBE15A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B2094D25A1A83500EBE15A /* AppDelegate.swift */; };
@@ -39,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E3084E2E19F1BBCE0A60276 /* Pods-memoooooo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memoooooo.release.xcconfig"; path = "Target Support Files/Pods-memoooooo/Pods-memoooooo.release.xcconfig"; sourceTree = "<group>"; };
+		A228569442217B3698791D77 /* Pods_memoooooo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_memoooooo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C10BAE9125A1D06300AE90C0 /* memoObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memoObject.swift; sourceTree = "<group>"; };
 		C157456925A1C710007C4139 /* listTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listTableViewCell.swift; sourceTree = "<group>"; };
 		C157456A25A1C710007C4139 /* listTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = listTableViewCell.xib; sourceTree = "<group>"; };
 		C1B2094A25A1A83500EBE15A /* memoooooo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memoooooo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +62,7 @@
 		C1B2097425A1A83600EBE15A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1B2098625A1A88300EBE15A /* mainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
 		C1B2098725A1A88300EBE15A /* mainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = mainViewController.xib; sourceTree = "<group>"; };
+		DD6C58167B7933CD1C35A834 /* Pods-memoooooo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memoooooo.debug.xcconfig"; path = "Target Support Files/Pods-memoooooo/Pods-memoooooo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39677C1BE5A65118358B39B7 /* Pods_memoooooo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +91,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ABB5F2647D6968BB34099C66 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD6C58167B7933CD1C35A834 /* Pods-memoooooo.debug.xcconfig */,
+				3E3084E2E19F1BBCE0A60276 /* Pods-memoooooo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C1B2094125A1A83500EBE15A = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +107,8 @@
 				C1B2096625A1A83600EBE15A /* memooooooTests */,
 				C1B2097125A1A83600EBE15A /* memooooooUITests */,
 				C1B2094B25A1A83500EBE15A /* Products */,
+				ABB5F2647D6968BB34099C66 /* Pods */,
+				C9F03302BDBC096B0EB2D9C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +136,7 @@
 				C1B2098725A1A88300EBE15A /* mainViewController.xib */,
 				C157456925A1C710007C4139 /* listTableViewCell.swift */,
 				C157456A25A1C710007C4139 /* listTableViewCell.xib */,
+				C10BAE9125A1D06300AE90C0 /* memoObject.swift */,
 			);
 			path = memoooooo;
 			sourceTree = "<group>";
@@ -140,6 +159,14 @@
 			path = memooooooUITests;
 			sourceTree = "<group>";
 		};
+		C9F03302BDBC096B0EB2D9C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A228569442217B3698791D77 /* Pods_memoooooo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1B2097725A1A83600EBE15A /* Build configuration list for PBXNativeTarget "memoooooo" */;
 			buildPhases = (
+				41B75B92DCC25E1B78DC26E0 /* [CP] Check Pods Manifest.lock */,
 				C1B2094625A1A83500EBE15A /* Sources */,
 				C1B2094725A1A83500EBE15A /* Frameworks */,
 				C1B2094825A1A83500EBE15A /* Resources */,
+				B0709559755DF07546AC8C0A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -266,6 +295,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		41B75B92DCC25E1B78DC26E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-memoooooo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0709559755DF07546AC8C0A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-memoooooo/Pods-memoooooo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-memoooooo/Pods-memoooooo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-memoooooo/Pods-memoooooo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C1B2094625A1A83500EBE15A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -276,6 +347,7 @@
 				C1B2098825A1A88300EBE15A /* mainViewController.swift in Sources */,
 				C157456B25A1C710007C4139 /* listTableViewCell.swift in Sources */,
 				C1B2095025A1A83500EBE15A /* SceneDelegate.swift in Sources */,
+				C10BAE9225A1D06300AE90C0 /* memoObject.swift in Sources */,
 				C1B2095825A1A83500EBE15A /* memoooooo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +513,7 @@
 		};
 		C1B2097825A1A83600EBE15A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD6C58167B7933CD1C35A834 /* Pods-memoooooo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -460,6 +533,7 @@
 		};
 		C1B2097925A1A83600EBE15A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E3084E2E19F1BBCE0A60276 /* Pods-memoooooo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
