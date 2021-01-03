@@ -20,10 +20,9 @@ class mainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
                                           bundle: Bundle.main),
                                     forCellReuseIdentifier: "listTableViewCell")
         self.listTableView.estimatedRowHeight = 50
-        self.listTableView.tableFooterView = UIView(frame: .zero)
-        UITableView.appearance().separatorInset = UIEdgeInsets.zero //ボーダーの左側の謎の隙間
+        self.listTableView.tableFooterView = UIView(frame: .zero) //空セル部分のボーダーをなくす
+        UITableView.appearance().separatorInset = UIEdgeInsets.zero //ボーダーの左側の謎の隙間をなくす
         
-        // Do any additional setup after loading the view.
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
