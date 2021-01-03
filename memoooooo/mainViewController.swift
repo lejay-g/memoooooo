@@ -34,7 +34,7 @@ class mainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        let realm_data = try! Realm()
+        let realm_data = realm_create()
         self.item_list = realm_data.objects(Memo.self)
         
         print("gogogo:\(self.item_list!.count)")
@@ -45,6 +45,28 @@ class mainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             return self.item_list!.count
         } else {
             return 0
+        }
+    }
+    
+    //セルの編集許可
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool
+    {
+        return true
+    }
+    
+    //スワイプしたセルを削除　※arrayNameは変数名に変更してください
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+        let item = self.item_list![indexPath.row]
+        
+        if editingStyle == UITableViewCell.EditingStyle.delete {
+            let realm = realm_create()
+            //uuidからアイテムを探して削除
+            let results = realm.objects(Memo.self).filter("id == '\(item.id)'")
+            try! realm.write {
+                realm.delete(results)
+            }
+            tableView.deleteRows(at: [indexPath as IndexPath], with: UITableView.RowAnimation.automatic)
         }
     }
     
@@ -67,7 +89,7 @@ class mainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             let memo_item = Memo()
             memo_item.item = item_string
             
-            let realm = try! Realm()
+            let realm = realm_create()
             try! realm.write {
                 realm.add(memo_item)
             }

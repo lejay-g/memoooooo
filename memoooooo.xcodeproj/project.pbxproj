@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		39677C1BE5A65118358B39B7 /* Pods_memoooooo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A228569442217B3698791D77 /* Pods_memoooooo.framework */; };
 		C10BAE9225A1D06300AE90C0 /* memoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10BAE9125A1D06300AE90C0 /* memoObject.swift */; };
+		C10BAE9D25A1FFE500AE90C0 /* RealmUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10BAE9C25A1FFE500AE90C0 /* RealmUtil.swift */; };
 		C157456B25A1C710007C4139 /* listTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C157456925A1C710007C4139 /* listTableViewCell.swift */; };
 		C157456C25A1C710007C4139 /* listTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C157456A25A1C710007C4139 /* listTableViewCell.xib */; };
 		C1B2094E25A1A83500EBE15A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B2094D25A1A83500EBE15A /* AppDelegate.swift */; };
@@ -44,6 +45,7 @@
 		3E3084E2E19F1BBCE0A60276 /* Pods-memoooooo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memoooooo.release.xcconfig"; path = "Target Support Files/Pods-memoooooo/Pods-memoooooo.release.xcconfig"; sourceTree = "<group>"; };
 		A228569442217B3698791D77 /* Pods_memoooooo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_memoooooo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C10BAE9125A1D06300AE90C0 /* memoObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memoObject.swift; sourceTree = "<group>"; };
+		C10BAE9C25A1FFE500AE90C0 /* RealmUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmUtil.swift; sourceTree = "<group>"; };
 		C157456925A1C710007C4139 /* listTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listTableViewCell.swift; sourceTree = "<group>"; };
 		C157456A25A1C710007C4139 /* listTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = listTableViewCell.xib; sourceTree = "<group>"; };
 		C1B2094A25A1A83500EBE15A /* memoooooo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memoooooo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +139,7 @@
 				C157456925A1C710007C4139 /* listTableViewCell.swift */,
 				C157456A25A1C710007C4139 /* listTableViewCell.xib */,
 				C10BAE9125A1D06300AE90C0 /* memoObject.swift */,
+				C10BAE9C25A1FFE500AE90C0 /* RealmUtil.swift */,
 			);
 			path = memoooooo;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1B2095225A1A83500EBE15A /* ViewController.swift in Sources */,
+				C10BAE9D25A1FFE500AE90C0 /* RealmUtil.swift in Sources */,
 				C1B2094E25A1A83500EBE15A /* AppDelegate.swift in Sources */,
 				C1B2098825A1A88300EBE15A /* mainViewController.swift in Sources */,
 				C157456B25A1C710007C4139 /* listTableViewCell.swift in Sources */,
