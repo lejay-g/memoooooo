@@ -11,8 +11,22 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet weak var listTableView: WKInterfaceTable!
+    
+    var items = ["aa","bb","cc","dd","ee","ff"]
+    
+    func setupTable() {
+        listTableView.setNumberOfRows(items.count, withRowType: "ItemRow")
+        for i in 0..<items.count {
+            if let row = listTableView.rowController(at: i) as? ItemRow {
+                row.Name.setText(items[i])
+            }
+        }
+    }
+        
     override func awake(withContext context: Any?) {
         // Configure interface objects here.
+        setupTable()
     }
     
     override func willActivate() {

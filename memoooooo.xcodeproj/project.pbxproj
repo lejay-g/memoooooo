@@ -19,6 +19,7 @@
 		C10BAEBB25A207E000AE90C0 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10BAEBA25A207E000AE90C0 /* ComplicationController.swift */; };
 		C10BAEBD25A207E100AE90C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C10BAEBC25A207E100AE90C0 /* Assets.xcassets */; };
 		C10BAEC225A207E100AE90C0 /* watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C10BAEA325A207DF00AE90C0 /* watch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C10BAEE025A212D300AE90C0 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10BAEDF25A212D300AE90C0 /* ItemRow.swift */; };
 		C157456B25A1C710007C4139 /* listTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C157456925A1C710007C4139 /* listTableViewCell.swift */; };
 		C157456C25A1C710007C4139 /* listTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C157456A25A1C710007C4139 /* listTableViewCell.xib */; };
 		C1B2094E25A1A83500EBE15A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B2094D25A1A83500EBE15A /* AppDelegate.swift */; };
@@ -106,6 +107,7 @@
 		C10BAEBC25A207E100AE90C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C10BAEBE25A207E100AE90C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C10BAEBF25A207E100AE90C0 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		C10BAEDF25A212D300AE90C0 /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 		C157456925A1C710007C4139 /* listTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listTableViewCell.swift; sourceTree = "<group>"; };
 		C157456A25A1C710007C4139 /* listTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = listTableViewCell.xib; sourceTree = "<group>"; };
 		C1B2094A25A1A83500EBE15A /* memoooooo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memoooooo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +191,7 @@
 				C10BAEBC25A207E100AE90C0 /* Assets.xcassets */,
 				C10BAEBE25A207E100AE90C0 /* Info.plist */,
 				C10BAEBF25A207E100AE90C0 /* PushNotificationPayload.apns */,
+				C10BAEDF25A212D300AE90C0 /* ItemRow.swift */,
 			);
 			path = "watch Extension";
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 			files = (
 				C10BAEB925A207E000AE90C0 /* NotificationController.swift in Sources */,
 				C10BAEBB25A207E000AE90C0 /* ComplicationController.swift in Sources */,
+				C10BAEE025A212D300AE90C0 /* ItemRow.swift in Sources */,
 				C10BAEB725A207E000AE90C0 /* ExtensionDelegate.swift in Sources */,
 				C10BAEB525A207E000AE90C0 /* InterfaceController.swift in Sources */,
 			);
@@ -602,7 +606,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Debug;
 		};
@@ -624,7 +628,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Release;
 		};
@@ -644,7 +648,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Debug;
 		};
@@ -664,7 +668,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Release;
 		};
