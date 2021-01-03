@@ -7,14 +7,36 @@
 
 import UIKit
 
-class mainViewController: UIViewController {
-
+class mainViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    
+    @IBOutlet weak var listTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.listTableView.delegate = self
+        self.listTableView.dataSource = self
+        self.listTableView.register(UINib(nibName: "listTableViewCell",
+                                          bundle: Bundle.main),
+                                    forCellReuseIdentifier: "listTableViewCell")
+        self.listTableView.estimatedRowHeight = 50
+        self.listTableView.tableFooterView = UIView(frame: .zero)
+        UITableView.appearance().separatorInset = UIEdgeInsets.zero //ボーダーの左側の謎の隙間
+        
         // Do any additional setup after loading the view.
     }
 
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "listTableViewCell") as! listTableViewCell
+        cell.itemLabel.text = String(indexPath.row)
+        
+        return cell
+    }
+    
 
     /*
     // MARK: - Navigation

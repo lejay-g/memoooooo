@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C157456B25A1C710007C4139 /* listTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C157456925A1C710007C4139 /* listTableViewCell.swift */; };
+		C157456C25A1C710007C4139 /* listTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C157456A25A1C710007C4139 /* listTableViewCell.xib */; };
 		C1B2094E25A1A83500EBE15A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B2094D25A1A83500EBE15A /* AppDelegate.swift */; };
 		C1B2095025A1A83500EBE15A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B2094F25A1A83500EBE15A /* SceneDelegate.swift */; };
 		C1B2095225A1A83500EBE15A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B2095125A1A83500EBE15A /* ViewController.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C157456925A1C710007C4139 /* listTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listTableViewCell.swift; sourceTree = "<group>"; };
+		C157456A25A1C710007C4139 /* listTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = listTableViewCell.xib; sourceTree = "<group>"; };
 		C1B2094A25A1A83500EBE15A /* memoooooo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memoooooo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1B2094D25A1A83500EBE15A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1B2094F25A1A83500EBE15A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 				C1B2095625A1A83500EBE15A /* memoooooo.xcdatamodeld */,
 				C1B2098625A1A88300EBE15A /* mainViewController.swift */,
 				C1B2098725A1A88300EBE15A /* mainViewController.xib */,
+				C157456925A1C710007C4139 /* listTableViewCell.swift */,
+				C157456A25A1C710007C4139 /* listTableViewCell.xib */,
 			);
 			path = memoooooo;
 			sourceTree = "<group>";
@@ -238,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1B2095D25A1A83600EBE15A /* LaunchScreen.storyboard in Resources */,
+				C157456C25A1C710007C4139 /* listTableViewCell.xib in Resources */,
 				C1B2095A25A1A83600EBE15A /* Assets.xcassets in Resources */,
 				C1B2098925A1A88300EBE15A /* mainViewController.xib in Resources */,
 			);
@@ -267,6 +274,7 @@
 				C1B2095225A1A83500EBE15A /* ViewController.swift in Sources */,
 				C1B2094E25A1A83500EBE15A /* AppDelegate.swift in Sources */,
 				C1B2098825A1A88300EBE15A /* mainViewController.swift in Sources */,
+				C157456B25A1C710007C4139 /* listTableViewCell.swift in Sources */,
 				C1B2095025A1A83500EBE15A /* SceneDelegate.swift in Sources */,
 				C1B2095825A1A83500EBE15A /* memoooooo.xcdatamodeld in Sources */,
 			);
