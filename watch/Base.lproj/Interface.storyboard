@@ -11,6 +11,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="watch" customModuleProvider="target">
                     <items>
+                        <label alignment="left" text="Label" id="CvG-XS-MgB"/>
                         <table alignment="left" id="c0Y-7d-u0c">
                             <items>
                                 <tableRow identifier="ItemRow" id="ydS-Ns-db9" customClass="ItemRow" customModule="watch_Extension">
@@ -28,6 +29,7 @@
                     </items>
                     <connections>
                         <outlet property="listTableView" destination="c0Y-7d-u0c" id="PwP-dk-59W"/>
+                        <outlet property="titleLabel" destination="CvG-XS-MgB" id="xlp-Sc-OXJ"/>
                     </connections>
                 </controller>
             </objects>

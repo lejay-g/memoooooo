@@ -7,8 +7,9 @@
 
 import UIKit
 import RealmSwift
+import WatchConnectivity
 
-class mainViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class mainViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,WCSessionDelegate {
     
     @IBOutlet weak var listTableView: UITableView!
     @IBOutlet weak var inputTextField: UITextField!
@@ -31,6 +32,13 @@ class mainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         //realmの場所
         print("gogogo:realm:db:\(Realm.Configuration.defaultConfiguration.fileURL!)")
         
+        //sessionをアクティベート
+        if WCSession.isSupported() {
+            let session = WCSession.default
+            session.delegate = self
+            session.activate()
+        }
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -41,6 +49,7 @@ class mainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         print("gogogo:\(self.item_list!.count)")
     }
 
+    // MARK: - TableViewDelegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if self.item_list != nil {
             return self.item_list!.count
@@ -68,6 +77,7 @@ class mainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
                 realm.delete(results)
             }
             tableView.deleteRows(at: [indexPath as IndexPath], with: UITableView.RowAnimation.automatic)
+            self.transferRealmFile()
         }
     }
     
@@ -82,6 +92,20 @@ class mainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         return cell
     }
     
+    // MARK: - SESSION Delegate
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        print("gogogo:activationDidComplete")
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        print("gogogo:sessionDidBecomeInactive")
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        print("gogogo:sessionDidDeactivate")
+    }
+    
+    // MARK: - TouchUpInside
     @IBAction func addButtonTouchUpInside(_ sender: Any) {
         var item_string:String! = ""
         
@@ -97,6 +121,16 @@ class mainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             
             self.inputTextField.text = ""
             self.listTableView.reloadData()
+            
+            self.transferRealmFile()
+        }
+    }
+    
+    // MARK: - Func
+    ///RealmファイルをWatchへ送信
+    func transferRealmFile(){
+        if let path = Realm.Configuration().fileURL {
+            WCSession.default.transferFile(path, metadata: nil)
         }
     }
     

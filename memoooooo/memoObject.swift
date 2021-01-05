@@ -9,6 +9,6 @@ import Foundation
 import RealmSwift
 
 public class Memo: Object {
-    @objc dynamic var id = UUID().uuidString
-    @objc dynamic var item:String = ""
+    @objc public dynamic var id = UUID().uuidString
+    @objc public dynamic var item:String = ""
 }

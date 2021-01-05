@@ -33,6 +33,7 @@
 		C1B2097325A1A83600EBE15A /* memooooooUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B2097225A1A83600EBE15A /* memooooooUITests.swift */; };
 		C1B2098825A1A88300EBE15A /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B2098625A1A88300EBE15A /* mainViewController.swift */; };
 		C1B2098925A1A88300EBE15A /* mainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1B2098725A1A88300EBE15A /* mainViewController.xib */; };
+		C1C78E3B25A4907E00D774F0 /* memoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10BAE9125A1D06300AE90C0 /* memoObject.swift */; };
 		CF8B5CBD8F23EE54C26257C0 /* Pods_watch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7DFFE4A0C7867307391894F /* Pods_watch.framework */; };
 /* End PBXBuildFile section */
 
@@ -618,6 +619,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1C78E3B25A4907E00D774F0 /* memoObject.swift in Sources */,
 				C10BAEB925A207E000AE90C0 /* NotificationController.swift in Sources */,
 				C10BAEBB25A207E000AE90C0 /* ComplicationController.swift in Sources */,
 				C10BAEE025A212D300AE90C0 /* ItemRow.swift in Sources */,
