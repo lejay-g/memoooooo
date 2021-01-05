@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		39677C1BE5A65118358B39B7 /* Pods_memoooooo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A228569442217B3698791D77 /* Pods_memoooooo.framework */; };
+		62A9E1E1D036543EDE6B98A7 /* Pods_watch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C4C5FB9DFF9270CE75068E /* Pods_watch_Extension.framework */; };
 		C10BAE9225A1D06300AE90C0 /* memoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10BAE9125A1D06300AE90C0 /* memoObject.swift */; };
 		C10BAE9D25A1FFE500AE90C0 /* RealmUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10BAE9C25A1FFE500AE90C0 /* RealmUtil.swift */; };
 		C10BAEA725A207DF00AE90C0 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C10BAEA525A207DF00AE90C0 /* Interface.storyboard */; };
@@ -32,6 +33,7 @@
 		C1B2097325A1A83600EBE15A /* memooooooUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B2097225A1A83600EBE15A /* memooooooUITests.swift */; };
 		C1B2098825A1A88300EBE15A /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B2098625A1A88300EBE15A /* mainViewController.swift */; };
 		C1B2098925A1A88300EBE15A /* mainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1B2098725A1A88300EBE15A /* mainViewController.xib */; };
+		CF8B5CBD8F23EE54C26257C0 /* Pods_watch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7DFFE4A0C7867307391894F /* Pods_watch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,8 +93,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		39B27B8BFE631A193E145333 /* Pods-watch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-watch Extension.release.xcconfig"; path = "Target Support Files/Pods-watch Extension/Pods-watch Extension.release.xcconfig"; sourceTree = "<group>"; };
 		3E3084E2E19F1BBCE0A60276 /* Pods-memoooooo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memoooooo.release.xcconfig"; path = "Target Support Files/Pods-memoooooo/Pods-memoooooo.release.xcconfig"; sourceTree = "<group>"; };
+		451059513F791188D93E26C9 /* Pods-watch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-watch.debug.xcconfig"; path = "Target Support Files/Pods-watch/Pods-watch.debug.xcconfig"; sourceTree = "<group>"; };
+		53C4C5FB9DFF9270CE75068E /* Pods_watch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_watch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E373D80A1054CBB8DF1EB36 /* Pods-watch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-watch Extension.debug.xcconfig"; path = "Target Support Files/Pods-watch Extension/Pods-watch Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		85988A0E29132B66A1E90192 /* Pods-watch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-watch.release.xcconfig"; path = "Target Support Files/Pods-watch/Pods-watch.release.xcconfig"; sourceTree = "<group>"; };
 		A228569442217B3698791D77 /* Pods_memoooooo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_memoooooo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7DFFE4A0C7867307391894F /* Pods_watch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_watch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C10BAE9125A1D06300AE90C0 /* memoObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memoObject.swift; sourceTree = "<group>"; };
 		C10BAE9C25A1FFE500AE90C0 /* RealmUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmUtil.swift; sourceTree = "<group>"; };
 		C10BAEA325A207DF00AE90C0 /* watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +134,19 @@
 		C1B2097425A1A83600EBE15A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1B2098625A1A88300EBE15A /* mainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
 		C1B2098725A1A88300EBE15A /* mainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = mainViewController.xib; sourceTree = "<group>"; };
+		C1D255ED25A4846700F2BE62 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1D255EE25A4846700F2BE62 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1D255EF25A4846700F2BE62 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1D255F025A4846700F2BE62 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1D255FA25A4848900F2BE62 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1D255FB25A4848900F2BE62 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1D255FC25A4848900F2BE62 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1D255FD25A4848900F2BE62 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1D2560725A4849200F2BE62 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1D2560825A4849200F2BE62 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1D2560925A4849200F2BE62 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1D2560A25A4849200F2BE62 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1D2561F25A4851700F2BE62 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD6C58167B7933CD1C35A834 /* Pods-memoooooo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memoooooo.debug.xcconfig"; path = "Target Support Files/Pods-memoooooo/Pods-memoooooo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62A9E1E1D036543EDE6B98A7 /* Pods_watch_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +181,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C9E5CD8459E6562530CC9C9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF8B5CBD8F23EE54C26257C0 /* Pods_watch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -167,6 +197,10 @@
 			children = (
 				DD6C58167B7933CD1C35A834 /* Pods-memoooooo.debug.xcconfig */,
 				3E3084E2E19F1BBCE0A60276 /* Pods-memoooooo.release.xcconfig */,
+				451059513F791188D93E26C9 /* Pods-watch.debug.xcconfig */,
+				85988A0E29132B66A1E90192 /* Pods-watch.release.xcconfig */,
+				7E373D80A1054CBB8DF1EB36 /* Pods-watch Extension.debug.xcconfig */,
+				39B27B8BFE631A193E145333 /* Pods-watch Extension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -263,7 +297,22 @@
 		C9F03302BDBC096B0EB2D9C5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C1D2561F25A4851700F2BE62 /* Realm.framework */,
+				C1D2560725A4849200F2BE62 /* Realm.framework */,
+				C1D2560825A4849200F2BE62 /* Realm.framework */,
+				C1D2560925A4849200F2BE62 /* RealmSwift.framework */,
+				C1D2560A25A4849200F2BE62 /* RealmSwift.framework */,
+				C1D255FA25A4848900F2BE62 /* Realm.framework */,
+				C1D255FB25A4848900F2BE62 /* Realm.framework */,
+				C1D255FC25A4848900F2BE62 /* RealmSwift.framework */,
+				C1D255FD25A4848900F2BE62 /* RealmSwift.framework */,
+				C1D255ED25A4846700F2BE62 /* Realm.framework */,
+				C1D255EE25A4846700F2BE62 /* Realm.framework */,
+				C1D255EF25A4846700F2BE62 /* RealmSwift.framework */,
+				C1D255F025A4846700F2BE62 /* RealmSwift.framework */,
 				A228569442217B3698791D77 /* Pods_memoooooo.framework */,
+				A7DFFE4A0C7867307391894F /* Pods_watch.framework */,
+				53C4C5FB9DFF9270CE75068E /* Pods_watch_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -275,8 +324,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C10BAEC725A207E100AE90C0 /* Build configuration list for PBXNativeTarget "watch" */;
 			buildPhases = (
+				54F9D7918D5745C4FF3799F5 /* [CP] Check Pods Manifest.lock */,
 				C10BAEA125A207DF00AE90C0 /* Resources */,
 				C10BAEC625A207E100AE90C0 /* Embed App Extensions */,
+				C9E5CD8459E6562530CC9C9D /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -292,9 +343,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C10BAEC325A207E100AE90C0 /* Build configuration list for PBXNativeTarget "watch Extension" */;
 			buildPhases = (
+				BE3C7766ADE9609B8D78986E /* [CP] Check Pods Manifest.lock */,
 				C10BAEAB25A207E000AE90C0 /* Sources */,
 				C10BAEAC25A207E000AE90C0 /* Frameworks */,
 				C10BAEAD25A207E000AE90C0 /* Resources */,
+				A0590A5A2760ED9012DC5709 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -480,6 +533,45 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		54F9D7918D5745C4FF3799F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-watch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0590A5A2760ED9012DC5709 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-watch Extension/Pods-watch Extension-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-watch Extension/Pods-watch Extension-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-watch Extension/Pods-watch Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B0709559755DF07546AC8C0A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -495,6 +587,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-memoooooo/Pods-memoooooo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE3C7766ADE9609B8D78986E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-watch Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -590,6 +704,7 @@
 /* Begin XCBuildConfiguration section */
 		C10BAEC425A207E100AE90C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E373D80A1054CBB8DF1EB36 /* Pods-watch Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -612,6 +727,7 @@
 		};
 		C10BAEC525A207E100AE90C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39B27B8BFE631A193E145333 /* Pods-watch Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -634,6 +750,7 @@
 		};
 		C10BAEC825A207E100AE90C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 451059513F791188D93E26C9 /* Pods-watch.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -642,6 +759,10 @@
 				DEVELOPMENT_TEAM = 9JD734J5X3;
 				IBSC_MODULE = watch_Extension;
 				INFOPLIST_FILE = watch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shokoni.memoooooo.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -654,6 +775,7 @@
 		};
 		C10BAEC925A207E100AE90C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85988A0E29132B66A1E90192 /* Pods-watch.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -662,6 +784,10 @@
 				DEVELOPMENT_TEAM = 9JD734J5X3;
 				IBSC_MODULE = watch_Extension;
 				INFOPLIST_FILE = watch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shokoni.memoooooo.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
